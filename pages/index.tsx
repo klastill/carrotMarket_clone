@@ -6,7 +6,7 @@ const Home: NextPage = () => {
       {new Array(10).fill(1).map((_, i) => (
         <div key={i} className="flex  px-4 border-b pb-4 cursor-pointer justify-between">
           <div className="flex space-x-4">
-            <div className="w-24 h-24 bg-gray-400 rounded-md" />
+            <div className="h-24 aspect-square bg-gray-400 rounded-md" />
             <div className="py-2 flex flex-col">
               <h3 className="text-md font-medium text-gray-900">New iPhone 14</h3>
               <span className="text-sm text-gray-700">Black</span>
