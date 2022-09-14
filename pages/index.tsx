@@ -8,7 +8,7 @@ const Home: NextPage = () => {
           <div className="flex space-x-4">
             <div className="h-24 aspect-square bg-gray-400 rounded-md" />
             <div className="py-2 flex flex-col">
-              <h3 className="text-md font-medium text-gray-900">New iPhone 14</h3>
+              <h3 className="text-base font-medium text-gray-900">New iPhone 14</h3>
               <span className="text-sm text-gray-700">Black</span>
               <span className="font-medium text-gray-900 mt-1">$95</span>
             </div>

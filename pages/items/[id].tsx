@@ -8,7 +8,7 @@ const ItemDetail: NextPage = () => {
         <div className="flex cursor-pointer items-center space-x-3 py-3 border-b">
           <div className="w-12 aspect-square rounded-full bg-slate-200" />
           <div>
-            <p className="text-md font-medium text-gray-700">Steve Jebs</p>
+            <p className="text-base font-medium text-gray-700">Steve Jebs</p>
             <p className="text-xs font-medium text-gray-700">
               View profile &rarr;
             </p>
@@ -28,7 +28,7 @@ const ItemDetail: NextPage = () => {
             motherfucker to get shot. You understand?
           </p>
           <div className="flex items-center justify-between space-x-2">
-            <button className="flex-1 py-2 rounded-md text-md font-medium text-white bg-orange-400 hover:bg-orange-500 border border-transparent shadow-sm focus:ring-2 focus:ring-offset-2 focus:ring-orange-500 focus:outline-none">
+            <button className="flex-1 py-2 rounded-mdbase font-medium text-white bg-orange-400 hover:bg-orange-500 border border-transparent shadow-sm focus:ring-2 focus:ring-offset-2 focus:ring-orange-500 focus:outline-none">
               Talk to seller
             </button>
             <button className="p-2 flex justify-center items-center text-gray-400 hover:bg-gray-50 hover:text-red-400 rounded-md">
@@ -57,8 +57,8 @@ const ItemDetail: NextPage = () => {
           {new Array(6).fill(1).map((_, i) => (
             <div key={i} className="px-4">
               <div className="rounded-md w-full aspect-square bg-slate-200 mb-2" />
-              <h3 className="text-md font-bold text-gray-700">Galaxy S60</h3>
-              <p className="text-md font-medium text-gray-700">$6</p>
+              <h3 className="text-base font-bold text-gray-700">Galaxy S60</h3>
+              <p className="text-base font-medium text-gray-700">$6</p>
             </div>
           ))}
         </div>
