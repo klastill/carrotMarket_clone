@@ -4,7 +4,7 @@ const ItemUpload: NextPage = () => {
   return (
     <div className="px-4 py-16">
       <div>
-        <label className="w-full cursor-pointer flex items-center justify-center border-gray-300 border-2 border-dashed h-48 rounded-md text-gray-600 hover:text-orange-400 hover:border-orange-400">
+        <label htmlFor="photo" className="w-full cursor-pointer flex items-center justify-center border-gray-300 border-2 border-dashed h-48 rounded-md text-gray-600 hover:text-orange-400 hover:border-orange-400">
           <svg
             className="h-12 w-12"
             stroke="currentColor"
@@ -20,7 +20,7 @@ const ItemUpload: NextPage = () => {
             />
           </svg>
 
-          <input type="file" className="hidden" />
+          <input id="photo" type="file" className="hidden" accept="image/*" />
         </label>
       </div>
       <div className="my-4">
