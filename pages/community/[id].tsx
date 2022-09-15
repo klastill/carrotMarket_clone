@@ -20,7 +20,7 @@ const CommunityPostDetail: NextPage = () => {
         </div>
         <div>
           <div className="mt-2 px-4 text-gray-700">
-            <span className="text-orange-500 font-medium">Q.</span> What is the
+            <span className="text-orange-400 font-medium">Q.</span> What is the
             best mandu restaurant?
           </div>
           <div className="flex px-4 space-x-5 mt-3 text-gray-700 py-2.5 border-b  w-full">

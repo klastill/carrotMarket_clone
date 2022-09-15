@@ -6,7 +6,7 @@ import TextArea from "../../components/textarea";
 
 const Create: NextPage = () => {
   return (
-    <Layout canGoBack title="Go Live">
+    <Layout canGoBack title="Go Stream">
       <form className=" space-y-4 py-10 px-4">
         <Input required label="Name" name="name" type="text" />
         <Input
@@ -18,7 +18,7 @@ const Create: NextPage = () => {
           kind="price"
         />
         <TextArea name="description" label="Description" />
-        <Button text="Go live" />
+        <Button text="Go Stream" />
       </form>
     </Layout>
   );

@@ -22,7 +22,7 @@ const Stream: NextPage = () => {
           </p>
         </div>
         <div>
-          <h2 className="text-2xl font-bold text-gray-900">Live Chat</h2>
+          <h2 className="text-2xl font-bold text-gray-900">Stream Chat</h2>
           <div className="py-10 pb-16 h-[50vh] overflow-y-scroll  px-4 space-y-4">
             <Message message="Hi how much are you selling them for?" />
             <Message message="I want ￦20,000" reversed />

@@ -65,7 +65,7 @@ export default function Enter() {
               </div>
             ) : null}
           </div>
-          <button className="mt-4 px-4 py-2 rounded-md text-sm font-medium text-white bg-orange-400 hover:bg-orange-500 border border-transparent shadow-sm focus:ring-2 focus:ring-offset-2 focus:ring-orange-500 focus:outline-none">
+          <button className="mt-4 px-4 py-2 rounded-md text-sm font-medium text-white bg-orange-400 hover:bg-orange-500 border border-transparent shadow-sm focus:ring-2 focus:ring-offset-2 focus:ring-orange-400 focus:outline-none">
             {method === "email" ? "Get login link" : null}
             {method === "phone" ? "Get one-time password" : null}
           </button>
