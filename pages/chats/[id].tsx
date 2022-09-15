@@ -1,144 +1,42 @@
 import type { NextPage } from "next";
+import Layout from "../../components/layout";
+import Message from "../../components/message";
 
-const Chats: NextPage = () => {
+const ChatDetail: NextPage = () => {
   return (
-    <div className="flex-1">
-      <div className="mb-12 space-y-4 px-4 py-10">
-        <div className="flex items-center space-x-2">
-          <div className="w-12 aspect-square bg-slate-200 rounded-full" />
-          <div className="w-1/2 text-sm fontmed text-gray-700 border rounded-xl px-4 py-2 border-gray-200">
-            Hi how much are you selling them for?
+    <Layout canGoBack title="Steve">
+      <div className="py-10 pb-16 px-4 space-y-4">
+        <Message message="Hi how much are you selling them for?" />
+        <Message message="I want ￦20,000" reversed />
+        <Message message="미쳤어" />
+        <Message message="Hi how much are you selling them for?" />
+        <Message message="I want ￦20,000" reversed />
+        <Message message="미쳤어" />
+        <Message message="Hi how much are you selling them for?" />
+        <Message message="I want ￦20,000" reversed />
+        <Message message="미쳤어" />
+        <Message message="Hi how much are you selling them for?" />
+        <Message message="I want ￦20,000" reversed />
+        <Message message="미쳤어" />
+        <Message message="Hi how much are you selling them for?" />
+        <Message message="I want ￦20,000" reversed />
+        <Message message="미쳤어" />
+        <form className="fixed py-2 bg-white  bottom-0 inset-x-0">
+          <div className="flex relative max-w-md items-center  w-full mx-auto">
+            <input
+              type="text"
+              className="shadow-sm rounded-full w-full border-gray-300 focus:ring-orange-400 focus:outline-none pr-12 focus:border-orange-400"
+            />
+            <div className="absolute inset-y-0 flex py-1.5 pr-1.5 right-0">
+              <button className="flex focus:ring-2 focus:ring-offset-2 focus:ring-orange-400 items-center bg-orange-400 rounded-full px-3 hover:bg-orange-500 text-sm text-white">
+                &rarr;
+              </button>
+            </div>
           </div>
-        </div>
-        <div className="flex flex-row-reverse items-center space-x-2 space-x-reverse">
-          <div className="w-1/2 text-sm fontmed text-gray-700 border rounded-xl px-4 py-2 border-orange-400">
-            I want ￦20,000
-          </div>
-        </div>
-        <div className="flex items-center space-x-2">
-          <div className="w-12 aspect-square bg-slate-200 rounded-full" />
-          <div className="w-1/2 text-sm fontmed text-gray-700 border rounded-xl px-4 py-2 border-gray-200">
-            미쳤어
-          </div>
-        </div>
-        <div className="flex items-center space-x-2">
-          <div className="w-12 aspect-square bg-slate-200 rounded-full" />
-          <div className="w-1/2 text-sm fontmed text-gray-700 border rounded-xl px-4 py-2 border-gray-200">
-            Hi how much are you selling them for?
-          </div>
-        </div>
-        <div className="flex flex-row-reverse items-center space-x-2 space-x-reverse">
-          <div className="w-1/2 text-sm fontmed text-gray-700 border rounded-xl px-4 py-2 border-orange-400">
-            I want ￦20,000
-          </div>
-        </div>
-        <div className="flex items-center space-x-2">
-          <div className="w-12 aspect-square bg-slate-200 rounded-full" />
-          <div className="w-1/2 text-sm fontmed text-gray-700 border rounded-xl px-4 py-2 border-gray-200">
-            미쳤어
-          </div>
-        </div>
-        <div className="flex items-center space-x-2">
-          <div className="w-12 aspect-square bg-slate-200 rounded-full" />
-          <div className="w-1/2 text-sm fontmed text-gray-700 border rounded-xl px-4 py-2 border-gray-200">
-            Hi how much are you selling them for?
-          </div>
-        </div>
-        <div className="flex flex-row-reverse items-center space-x-2 space-x-reverse">
-          <div className="w-1/2 text-sm fontmed text-gray-700 border rounded-xl px-4 py-2 border-orange-400">
-            I want ￦20,000
-          </div>
-        </div>
-        <div className="flex items-center space-x-2">
-          <div className="w-12 aspect-square bg-slate-200 rounded-full" />
-          <div className="w-1/2 text-sm fontmed text-gray-700 border rounded-xl px-4 py-2 border-gray-200">
-            미쳤어
-          </div>
-        </div>
-        <div className="flex items-center space-x-2">
-          <div className="w-12 aspect-square bg-slate-200 rounded-full" />
-          <div className="w-1/2 text-sm fontmed text-gray-700 border rounded-xl px-4 py-2 border-gray-200">
-            Hi how much are you selling them for?
-          </div>
-        </div>
-        <div className="flex flex-row-reverse items-center space-x-2 space-x-reverse">
-          <div className="w-1/2 text-sm fontmed text-gray-700 border rounded-xl px-4 py-2 border-orange-400">
-            I want ￦20,000
-          </div>
-        </div>
-        <div className="flex items-center space-x-2">
-          <div className="w-12 aspect-square bg-slate-200 rounded-full" />
-          <div className="w-1/2 text-sm fontmed text-gray-700 border rounded-xl px-4 py-2 border-gray-200">
-            미쳤어
-          </div>
-        </div>
-        <div className="flex items-center space-x-2">
-          <div className="w-12 aspect-square bg-slate-200 rounded-full" />
-          <div className="w-1/2 text-sm fontmed text-gray-700 border rounded-xl px-4 py-2 border-gray-200">
-            Hi how much are you selling them for?
-          </div>
-        </div>
-        <div className="flex flex-row-reverse items-center space-x-2 space-x-reverse">
-          <div className="w-1/2 text-sm fontmed text-gray-700 border rounded-xl px-4 py-2 border-orange-400">
-            I want ￦20,000
-          </div>
-        </div>
-        <div className="flex items-center space-x-2">
-          <div className="w-12 aspect-square bg-slate-200 rounded-full" />
-          <div className="w-1/2 text-sm fontmed text-gray-700 border rounded-xl px-4 py-2 border-gray-200">
-            미쳤어
-          </div>
-        </div>
-        <div className="flex items-center space-x-2">
-          <div className="w-12 aspect-square bg-slate-200 rounded-full" />
-          <div className="w-1/2 text-sm fontmed text-gray-700 border rounded-xl px-4 py-2 border-gray-200">
-            Hi how much are you selling them for?
-          </div>
-        </div>
-        <div className="flex flex-row-reverse items-center space-x-2 space-x-reverse">
-          <div className="w-1/2 text-sm fontmed text-gray-700 border rounded-xl px-4 py-2 border-orange-400">
-            I want ￦20,000
-          </div>
-        </div>
-        <div className="flex items-center space-x-2">
-          <div className="w-12 aspect-square bg-slate-200 rounded-full" />
-          <div className="w-1/2 text-sm fontmed text-gray-700 border rounded-xl px-4 py-2 border-gray-200">
-            미쳤어
-          </div>
-        </div>
-        <div className="flex items-center space-x-2">
-          <div className="w-12 aspect-square bg-slate-200 rounded-full" />
-          <div className="w-1/2 text-sm fontmed text-gray-700 border rounded-xl px-4 py-2 border-gray-200">
-            Hi how much are you selling them for?
-          </div>
-        </div>
-        <div className="flex flex-row-reverse items-center space-x-2 space-x-reverse">
-          <div className="w-1/2 text-sm fontmed text-gray-700 border rounded-xl px-4 py-2 border-orange-400">
-            I want ￦20,000
-          </div>
-        </div>
-        <div className="flex items-center space-x-2">
-          <div className="w-12 aspect-square bg-slate-200 rounded-full" />
-          <div className="w-1/2 text-sm fontmed text-gray-700 border rounded-xl px-4 py-2 border-gray-200">
-            미쳤어
-          </div>
-        </div>
+        </form>
       </div>
-      <div className="fixed w-full px-4 pt-4 bottom-0 inset-x-0 bg-orange-50">
-        <div className="relative flex items-center mb-4">
-          <input
-            type="text"
-            className="appearance-none w-full px-4 py-2 pr-10 border border-gray-400 rounded-xl shadow-sm placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-orange-400 focus:border-transparent"
-          />
-          <div className="absolute inset-y-0 flex py-2 pr-2 right-0">
-            <button className="bg-orange-400 px-2 rounded-full text-white hover:bg-orange-500 cursor-pointer focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-orange-500 focus:border-transparent">
-              &rarr;
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
+    </Layout>
   );
 };
 
-export default Chats;
+export default ChatDetail;

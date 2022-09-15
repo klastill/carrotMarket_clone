@@ -1,114 +1,59 @@
 import type { NextPage } from "next";
+import Layout from "../../components/layout";
+import Message from "../../components/message";
 
-const Live: NextPage = () => {
+const Stream: NextPage = () => {
   return (
-    <div className="py-10 px-4 space-y-2">
-      <div className="w-full aspect-video bg-slate-200 rounded-md" />
-      <h3 className="text-gray-700 font-semibold text-xl bg-slate-200">
-        Let&apos;s try potatos
-      </h3>
-      <div className="pt-4 pb-12 space-y-4 px-4 h-[50vh] overflow-y-scroll">
-        <div className="flex items-center space-x-2">
-          <div className="w-12 aspect-square bg-slate-200 rounded-full" />
-          <div className="w-1/2 text-sm fontmed text-gray-700 border rounded-xl px-4 py-2 border-gray-200">
-            Hi how much are you selling them for?
-          </div>
+    <Layout canGoBack>
+      <div className="py-10 px-4  space-y-4">
+        <div className="w-full rounded-md shadow-sm bg-slate-300 aspect-video" />
+        <div className="mt-5">
+          <h1 className="text-3xl font-bold text-gray-900">Galaxy S50</h1>
+          <span className="text-2xl block mt-3 text-gray-900">$140</span>
+          <p className=" my-6 text-gray-700">
+            My money&apos;s in that office, right? If she start giving me some
+            bullshit about it ain&apos;t there, and we got to go someplace else
+            and get it, I&apos;m gonna shoot you in the head then and there.
+            Then I&apos;m gonna shoot that bitch in the kneecaps, find out where
+            my goddamn money is. She gonna tell me too. Hey, look at me when
+            I&apos;m talking to you, motherfucker. You listen: we go in there,
+            and that ni**a Winston or anybody else is in there, you the first
+            motherfucker to get shot. You understand?
+          </p>
         </div>
-        <div className="flex flex-row-reverse items-center space-x-2 space-x-reverse">
-          <div className="w-1/2 text-sm fontmed text-gray-700 border rounded-xl px-4 py-2 border-orange-400">
-            I want ￦20,000
+        <div>
+          <h2 className="text-2xl font-bold text-gray-900">Live Chat</h2>
+          <div className="py-10 pb-16 h-[50vh] overflow-y-scroll  px-4 space-y-4">
+            <Message message="Hi how much are you selling them for?" />
+            <Message message="I want ￦20,000" reversed />
+            <Message message="미쳤어" />
+            <Message message="Hi how much are you selling them for?" />
+            <Message message="I want ￦20,000" reversed />
+            <Message message="미쳤어" />
+            <Message message="Hi how much are you selling them for?" />
+            <Message message="I want ￦20,000" reversed />
+            <Message message="미쳤어" />
+            <Message message="Hi how much are you selling them for?" />
+            <Message message="I want ￦20,000" reversed />
+            <Message message="미쳤어" />
           </div>
-        </div>
-        <div className="flex items-center space-x-2">
-          <div className="w-12 aspect-square bg-slate-200 rounded-full" />
-          <div className="w-1/2 text-sm fontmed text-gray-700 border rounded-xl px-4 py-2 border-gray-200">
-            미쳤어
-          </div>
-        </div>
-        <div className="flex items-center space-x-2">
-          <div className="w-12 aspect-square bg-slate-200 rounded-full" />
-          <div className="w-1/2 text-sm fontmed text-gray-700 border rounded-xl px-4 py-2 border-gray-200">
-            Hi how much are you selling them for?
-          </div>
-        </div>
-        <div className="flex flex-row-reverse items-center space-x-2 space-x-reverse">
-          <div className="w-1/2 text-sm fontmed text-gray-700 border rounded-xl px-4 py-2 border-orange-400">
-            I want ￦20,000
-          </div>
-        </div>
-        <div className="flex items-center space-x-2">
-          <div className="w-12 aspect-square bg-slate-200 rounded-full" />
-          <div className="w-1/2 text-sm fontmed text-gray-700 border rounded-xl px-4 py-2 border-gray-200">
-            미쳤어
-          </div>
-        </div>
-        <div className="flex items-center space-x-2">
-          <div className="w-12 aspect-square bg-slate-200 rounded-full" />
-          <div className="w-1/2 text-sm fontmed text-gray-700 border rounded-xl px-4 py-2 border-gray-200">
-            Hi how much are you selling them for?
-          </div>
-        </div>
-        <div className="flex flex-row-reverse items-center space-x-2 space-x-reverse">
-          <div className="w-1/2 text-sm fontmed text-gray-700 border rounded-xl px-4 py-2 border-orange-400">
-            I want ￦20,000
-          </div>
-        </div>
-        <div className="flex items-center space-x-2">
-          <div className="w-12 aspect-square bg-slate-200 rounded-full" />
-          <div className="w-1/2 text-sm fontmed text-gray-700 border rounded-xl px-4 py-2 border-gray-200">
-            미쳤어
-          </div>
-        </div>
-        <div className="flex items-center space-x-2">
-          <div className="w-12 aspect-square bg-slate-200 rounded-full" />
-          <div className="w-1/2 text-sm fontmed text-gray-700 border rounded-xl px-4 py-2 border-gray-200">
-            Hi how much are you selling them for?
-          </div>
-        </div>
-        <div className="flex flex-row-reverse items-center space-x-2 space-x-reverse">
-          <div className="w-1/2 text-sm fontmed text-gray-700 border rounded-xl px-4 py-2 border-orange-400">
-            I want ￦20,000
-          </div>
-        </div>
-        <div className="flex items-center space-x-2">
-          <div className="w-12 aspect-square bg-slate-200 rounded-full" />
-          <div className="w-1/2 text-sm fontmed text-gray-700 border rounded-xl px-4 py-2 border-gray-200">
-            미쳤어
-          </div>
-        </div>
-        <div className="flex items-center space-x-2">
-          <div className="w-12 aspect-square bg-slate-200 rounded-full" />
-          <div className="w-1/2 text-sm fontmed text-gray-700 border rounded-xl px-4 py-2 border-gray-200">
-            Hi how much are you selling them for?
-          </div>
-        </div>
-        <div className="flex flex-row-reverse items-center space-x-2 space-x-reverse">
-          <div className="w-1/2 text-sm fontmed text-gray-700 border rounded-xl px-4 py-2 border-orange-400">
-            I want ￦20,000
-          </div>
-        </div>
-        <div className="flex items-center space-x-2">
-          <div className="w-12 aspect-square bg-slate-200 rounded-full" />
-          <div className="w-1/2 text-sm fontmed text-gray-700 border rounded-xl px-4 py-2 border-gray-200">
-            미쳤어
+          <div className="fixed py-2 bg-white  bottom-0 inset-x-0">
+            <div className="flex relative max-w-md items-center  w-full mx-auto">
+              <input
+                type="text"
+                className="shadow-sm rounded-full w-full border-gray-300 focus:ring-orange-400 focus:outline-none pr-12 focus:border-orange-400"
+              />
+              <div className="absolute inset-y-0 flex py-1.5 pr-1.5 right-0">
+                <button className="flex focus:ring-2 focus:ring-offset-2 focus:ring-orange-400 items-center bg-orange-400 rounded-full px-3 hover:bg-orange-500 text-sm text-white">
+                  &rarr;
+                </button>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      <div className="fixed w-full px-4 pt-4 bottom-0 inset-x-0">
-        <div className="relative flex items-center mb-4">
-          <input
-            type="text"
-            className="appearance-none w-full px-4 py-2 pr-10 border border-gray-400 rounded-xl shadow-sm placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-orange-400 focus:border-transparent"
-          />
-          <div className="absolute inset-y-0 flex py-2 pr-2 right-0">
-            <button className="bg-orange-400 px-2 rounded-full text-white hover:bg-orange-500 cursor-pointer focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-orange-500 focus:border-transparent">
-              &rarr;
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
+    </Layout>
   );
 };
 
-export default Live;
+export default Stream;
